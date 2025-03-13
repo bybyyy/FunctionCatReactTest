@@ -29,9 +29,9 @@ class About extends Component {
               />
             </div>
             <div className="nine columns main-col">
-              <h2 style={{fontSize: "28px", color: "#333" }}>About Me</h2>
+              <h2 style={{fontSize: "28px", color: "#00CFFF" }}>About Me</h2>
 
-              <p style={{lineHeight: "1.6", fontSize: "16px", color: "#555" }}>{bio}</p>
+              <p style={{lineHeight: "1.6", fontSize: "16px", color: "#00CFFF" }}>{bio}</p>
               <div className="row">
                 <div className="columns contact-details">
                   <h2 style={{fontSize: "22px", marginBottom: "10px" }}>Contact Details</h2>
