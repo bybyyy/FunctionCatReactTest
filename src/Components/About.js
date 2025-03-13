@@ -24,16 +24,17 @@ class About extends Component {
               <img
                 className="profile-pic"
                 src={profilepic}
-                alt="Nordic Giant Profile Pic"
+                style={{ borderRadius: "50%", boxShadow: "0 4px 10px rgba(0,0,0,0.2)" }}
+                alt={`${name}'s Profile`}
               />
             </div>
             <div className="nine columns main-col">
-              <h2>About Me</h2>
+              <h2 style={{fontSize: "28px", color: "#333" }}>About Me</h2>
 
-              <p>{bio}</p>
+              <p style={{lineHeight: "1.6", fontSize: "16px", color: "#555" }}>{bio}</p>
               <div className="row">
                 <div className="columns contact-details">
-                  <h2>Contact Details</h2>
+                  <h2 style={{fontSize: "22px", marginBottom: "10px" }}>Contact Details</h2>
                   <p className="address">
                     <span>{name}</span>
                     <br />
@@ -50,8 +51,23 @@ class About extends Component {
                 </div>
                 <div className="columns download">
                   <p>
-                    <a href={resumeDownload} className="button">
-                      <i className="fa fa-download"></i>Download Resume
+                    <a
+                      href={resumeDownload}
+                      className="button"
+                      style={{
+                        display: "inline-block",
+                        padding: "10px 20px",
+                        fontSize: "16px",
+                        color: "#fff",
+                        background: "#007bff",
+                        borderRadius: "5px",
+                        textDecoration: "none",
+                        transition: "background 0.3s ease",
+                      }}
+                      onMouseOver={(e) => (e.target.style.background = "#0056b3")}
+                      onMouseOut={(e) => (e.target.style.background = "#007bff")}
+                    >
+                      <i className="fa fa-download"></i> Download Resume
                     </a>
                   </p>
                 </div>
